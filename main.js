@@ -1,11 +1,14 @@
 import './style.css'
+import binaryFileUrl from "./public/test.swf?url";
+import binaryFileStringContents from "./public/test.swf?raw";
 
 window.addEventListener("load", (event) => {
-  const imgUrl = new URL("./test.swf", import.meta.url).href;
   const ruffle = RufflePlayer.newest();
   const player = ruffle.createPlayer();
+  console.log(binaryFileStringContents);
   const container = document.getElementById("container");
   container.appendChild(player);
-  console.log(imgUrl);
-  player.load(imgUrl);
+
+  fetch(binaryFileUrl).then((data) => player.load(data))
+
 });
