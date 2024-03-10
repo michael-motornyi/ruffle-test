@@ -1,0 +1,17 @@
+{
+  "name": "ruffle-test",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.1.4"
+  },
+  "dependencies": {
+    "@ruffle-rs/ruffle": "^0.1.0-nightly.2024.3.10"
+  }
+}
