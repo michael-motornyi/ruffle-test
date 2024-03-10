@@ -5,5 +5,5 @@ window.addEventListener("load", (event) => {
   const player = ruffle.createPlayer();
   const container = document.getElementById("container");
   container.appendChild(player);
-  player.load("./test.swf");
+  player.load("./public/test.swf");
 });
